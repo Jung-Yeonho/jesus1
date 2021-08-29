@@ -12,32 +12,7 @@
 
   gtag('config', 'G-8DKE469YWC');
 </script>
-<script>
-    function nightDayHandler(self){
-    var target = document.querySelector('body');
-    if(self.value === 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    self.value = 'day';
-    alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color ='powderblue';
-        i = i + 1
-        }
-    }else{
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    self.value = 'night';
-    alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color ='blue';
-    i = i + 1
-      }
-    }
-  }
-</script>
+<script src="colors.js"></script>
 </head>
 <body style="background-color:white;color:black;">
   <h1><a href="index.html">초신자들을 위한 신앙문답</a></h1>
